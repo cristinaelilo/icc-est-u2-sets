@@ -26,7 +26,7 @@ public class Contacto {
     }
 
     @Override
-    public String toString() {
+    public String toString() { //El toString retorna los atributos que deseamos
         return nombre + " " + apellido + " - " + telefono;
     }
 
@@ -36,7 +36,9 @@ public class Contacto {
         if (obj == null || getClass() != obj.getClass()) return false;
         Contacto contacto = (Contacto) obj;
         return Objects.equals(nombre, contacto.nombre) &&
-               Objects.equals(apellido, contacto.apellido)<
+               Objects.equals(apellido, contacto.apellido) &&
+               Objects.equals(telefono, contacto.telefono);
+
     }
 
     @Override

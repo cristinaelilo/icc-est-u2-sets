@@ -57,13 +57,21 @@ public class App {
         Set<Contacto> agenda = new TreeSet<>(new ContactoComparator());
 
         // Agregar algunos contactos a la agenda
-        agenda.add(new Contacto("Denisse", "Paredes", "0302890397"));
-        agenda.add(new Contacto("Blanca", "Peralta", "987654321"));
-        agenda.add(new Contacto("Daniel", "Loja", "01072502345"));
-        agenda.add(new Contacto("Cris", "Loja", "0107240608"));
-        agenda.add(new Contacto("Cris", "Loja", "0107240608"));
+        //Contacto c1 = new Contacto(Pedro, Lopez, 123456789);
+        //Contacto c2 = new Contacto(Pedro, Lopez, 123456789); 
 
-        // Mostrar los contactos ordenados
+        //System.out.println(c1);
+        //System.out.println(c2);
+
+        //System.out.println("Referencia en memoria");
+        //boolean comparacionReferencia = c1 = 
+        agenda.add(new Contacto("Pedro", "Lopez", "2222222222"));
+        agenda.add(new Contacto("Luis", "Perez", "1111111111"));
+        agenda.add(new Contacto("Ana", "Perez", "01072502345"));
+        agenda.add(new Contacto("Pedro", "Lopez", "123456789"));
+        //agenda.add(new Contacto("Cris", "Loja", "0107240608"));
+
+        //Mostrar los contactos ordenados
         System.out.println("\nLista de contactos ordenada:");
         for (Contacto contacto : agenda) {
             System.out.println(contacto);

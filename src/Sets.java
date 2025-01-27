@@ -28,7 +28,7 @@ public class Sets {
         return miLinkedHashSet;
     }
 
-    public Set<String> construirTreeSet() {
+    public Set<String> construirTreeSet() { //Necesita un comparador 
         Set<String> miTreeSet = new TreeSet<>();
         miTreeSet.add("Manzana");
         miTreeSet.add("Pera");

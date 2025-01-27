@@ -13,6 +13,12 @@ public class ContactoComparator implements Comparator<Contacto> {
         }
 
         // Si los apellidos son iguales, comparamos los nombres
-        return c1.getNombre().compareToIgnoreCase(c2.getNombre());
+        int comparacionNombre = c1.getNombre().compareToIgnoreCase(c2.getNombre());
+        if (comparacionNombre != 0) {
+            return comparacionNombre;
+        }
+
+        // Si los apellidos y nombres son iguales, comparamos los teléfonos
+        return c1.getTelefono().compareTo(c2.getTelefono());
     }
 }
